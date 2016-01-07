@@ -1,0 +1,16 @@
+{ 
+ "event": "AddMMTWeatherEntry", 
+ "url": "http://mattmillertime.com/weather/api/weather", 
+ "requestType": "POST",
+  "json": {
+    "Temperature": "{{t}}",
+    "Humidity": "{{h}}",
+    "SoilMoisture": "{{sm}}",
+    "SoilTemperature": "{{st}}",
+    "RainGauge": "{{rg}}",
+    "Pressure": "{{p}}",
+    "WindSpeed": "{{ws}}",
+    "WindDirection": "{{wd}}"
+  },
+ "mydevices": true 
+}
