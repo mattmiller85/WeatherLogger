@@ -150,7 +150,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="App_Data\weatherdata.json" />
-    <Content Include="App_Data\web.config" />
     <None Include="Properties\PublishProfiles\godaddy ftp.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
