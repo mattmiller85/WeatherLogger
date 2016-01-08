@@ -7,7 +7,7 @@ $(document).ready(function () {
     getLatestWeatherEntry();
     setInterval(function () {
         getLatestWeatherEntry();
-    }, 5000);
+    }, 30000);
 
 });
 
