@@ -11,7 +11,7 @@ namespace WeatherLoggerApi
         string _connectionString = ConfigurationManager.ConnectionStrings["mmt"].ConnectionString;
         public List<WeatherEntry> GetLatestEntries(int count)
         {
-            var cmd = new SqlCommand(@"Select top (@count) * From WeatherEntries", new SqlConnection(_connectionString));
+            var cmd = new SqlCommand(@"Select top (@count) * From WeatherEntries Order By Timestamp Desc", new SqlConnection(_connectionString));
             cmd.Parameters.Add(new SqlParameter("@count", count));
             cmd.Connection.Open();
             var dr = cmd.ExecuteReader();
