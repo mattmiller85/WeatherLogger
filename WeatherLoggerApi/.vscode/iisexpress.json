@@ -1,0 +1,6 @@
+{
+  "port": 33327,
+  "path": "c:\\Users\\matt.miller\\Documents\\GitHub\\WeatherLogger\\WeatherLoggerApi",
+  "clr": "v4.0",
+  "protocol": "http"
+}
