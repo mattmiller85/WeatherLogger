@@ -35,7 +35,8 @@ function getLatestWeatherEntry() {
             viewModel.Humidity(latest.Humidity);
             viewModel.TimeStamp(latest.TimeStamp);
             //@ts-ignore
-            viewModel.RelativeDate(moment(latest.TimeStamp).fromNow())    
+            viewModel.RelativeDate(moment(latest.TimeStamp).add(2, 'hours').fromNow())    
+            
         });
     });
 }
