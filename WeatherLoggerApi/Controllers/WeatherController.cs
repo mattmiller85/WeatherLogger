@@ -22,6 +22,7 @@ namespace WeatherLoggerApi.Controllers
         }
 
         // GET: api/Weather/5
+        [Route("api/weather/{count}")]
         public IEnumerable<WeatherEntry> Get(int count)
         {
             return _repo.GetLatestEntries(count);
